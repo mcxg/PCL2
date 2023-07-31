@@ -1,5 +1,5 @@
 
-<local:MyCard Title="IPV6联机（测试版）">
+<local:MyCard Title="IPV6联机（测试版）" Margin="0,0,0,15">
     <StackPanel Margin="25,40,23,15">
         <TextBlock Margin="0,0,0,10" TextWrapping="Wrap"
                    Text="现在我们找到了关于IPV6的联机方法，请注意，该方法仅适用于有IPV6地址的小伙伴们玩耍" />
@@ -13,14 +13,39 @@
     </StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="关于该Blog">
+<local:MyCard Title="关于该Blog" Margin="0,0,0,15">
     <StackPanel Margin="25,40,23,15">
         <TextBlock Margin="0,0,0,10" TextWrapping="Wrap"
                    Text="我们在这个标记文件里更新一些新闻，比如关于Minecraft的，这样你只需要将PCL打开并使用该文件即可了解一些事情，希望使用愉快！" />
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <local:MyButton Margin="0,0,10,0" Width="150" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                        Text="进入作者的Github" EventType="打开网页" EventData="https://github.com/mcxg/PCL2" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                        Text="检查更新" EventType="打开文件" EventData="自动更新.bat" ToolTip="检查是否有新的XAML文件可用" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                        Text="查看说明性文档" EventType="打开文件" EventData="README.md" ToolTip="这是使用说明和须知"/>
+        </StackPanel>
     </StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="关于Microsoft官方查封盗版事件">
+<local:MyCard Title="Blog版本更新通告" Margin="0,0,0,15">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock Margin="0,0,0,10" TextWrapping="Wrap"
+                   Text="在0.23.7.31版本更新后，我们改变和新增了以下内容：" />
+		<TextBlock Margin="0,0,0,10" TextWrapping="Wrap"
+                   Text="1.Blog更新源由蓝奏云网盘改为Github" />
+		<TextBlock Margin="0,0,0,10" TextWrapping="Wrap"
+                   Text="2.修改了Blog更新方式，即手动下载改为bat文件一键更新" />
+		<TextBlock Margin="0,0,0,10" TextWrapping="Wrap"
+                   Text="3.新增了IPv6联机方法" />
+		<TextBlock Margin="0,0,0,10" TextWrapping="Wrap"
+                   Text="4.加入版本号，格式为：是否正式投入大面积使用（0或者1）.年份后两位.月份.日期.次序（可以省略）" />
+		<TextBlock Margin="0,0,0,10" TextWrapping="Wrap"
+                   Text="5.加入了README.md说明性文档" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="关于Microsoft官方查封盗版事件" Margin="0,0,0,15">
     <StackPanel Margin="25,40,23,15">
         <TextBlock Margin="0,0,0,10" TextWrapping="Wrap"
                    Text="最近，网络上有一些离线玩家发现多人游戏选项被禁，也许Microsoft官方会继续对盗版进行打击" />
@@ -31,20 +56,20 @@
     </StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="JYP Team 成员公示表">
+<local:MyCard Title="JYP Team 成员公示表" Margin="0,0,0,15">
     <StackPanel Margin="25,40,23,15">
         <TextBlock Margin="0,0,0,10" TextWrapping="Wrap"
                    Text="为了让大家明白JYP Team都有些谁，我们搞了这个" />
         <TextBlock Margin="0,0,0,4" Foreground="#ff0000"
                    Text="当然，你也可以不看" />
         <TextBlock Margin="10,5,10,0" Foreground="#297aec"
-                   Text="永驻成员 顾小菌 张小帅 小杨 小烁 阿德 子叶 虚空焏" />
+                   Text="永驻成员 顾小菌 张小帅 小杨 小烁 阿德 子叶 虚空焏 老冯 元气文轩" />
         <TextBlock Margin="15,5,15,0" FontSize="12" Foreground="#858585" 
-                   Text="暂定成员 催逝员（老冯） 元气文轩 知枫言" />
+                   Text="暂定成员 小冯" />
     </StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="关于JYP Team" CanSwap="true">
+<local:MyCard Title="关于JYP Team" CanSwap="true" Margin="0,0,0,15">
     <StackPanel Margin="25,40,23,15">
         <TextBlock Margin="0,0,0,10" TextWrapping="Wrap" Foreground="#2a2aff"
                    Text="JYP Team 是一个非正版 Minecraft 的团队，主要为没有钱买正版又不想玩网易版的玩家服务" />
@@ -68,16 +93,20 @@
                    Text="需要购买游戏（基岩版，需要Windows版本10-21H1及以上），设备空闲内存大于10GB，运行内存最低3GB，建议6GB及以上，可以很简单的玩Java版，需要Windows版本大于7" />
         <TextBlock Margin="0,0,0,5"  TextWrapping="Wrap" Foreground="#ffbe46"
                    Text="MacOS" />
-        <TextBlock Margin="0,0,0,5"  TextWrapping="Wrap" Foreground="#ff0000"
-                   Text="尚未明确" />
+        <TextBlock Margin="0,0,0,5"  TextWrapping="Wrap" Foreground="#ffbe46"
+                   Text="运行内存大于3GB即可，只能用HMCL启动游戏" />
         <TextBlock Margin="0,0,0,5"  TextWrapping="Wrap" Foreground="#ffbe46"
                    Text="LinuxOS及Ubuntu" />
         <TextBlock Margin="0,0,0,5"  TextWrapping="Wrap" Foreground="#ff0000"
                    Text="尚未明确" />
+		<TextBlock Margin="0,0,0,5"  TextWrapping="Wrap" Foreground="#ffbe46"
+                   Text="iOS" />
+        <TextBlock Margin="0,0,0,5"  TextWrapping="Wrap" Foreground="#858585"
+                   Text="不可用" />
     </StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="打开内置服务器" CanSwap="True" IsSwaped="True" >
+<local:MyCard Title="打开内置服务器" CanSwap="True" IsSwaped="True" Margin="0,0,0,15">
     <StackPanel Margin="25,40,23,15" >
         <local:MyHint Margin="0,0,0,8" Text="使用此功能需要取得 mcxg 的专属配置" />
         <local:MyHint Margin="0,0,0,8" IsWarn="false" Text="如果你不是管理员 mcxg ，你将很难使用此卡片" />
@@ -93,7 +122,7 @@
     </StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="快捷启动游戏" CanSwap="True" IsSwaped="True">
+<local:MyCard Title="快捷启动游戏" CanSwap="True" IsSwaped="True" Margin="0,0,0,15">
     <StackPanel Margin="25,40,23,15" >
        <local:MyHint Margin="0,0,0,8" Text="这是 mcxg 调试用的客户端，名称不符合则无效" /> 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
