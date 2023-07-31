@@ -1,6 +1,6 @@
 # PCL2
 Files About Paint Craft Launcher 2 
-0.23.7.31
+0.23.7.31.2
 English 
 First, the file is only used for an open source branch of PCL2, and it is forbidden to use it for profit.
 This is a Windows application
