@@ -1,9 +1,9 @@
 
-<local:MyCard Title="IPV6联机（测试版）" Margin="0,0,0,15">
+<local:MyCard Title="IPV6联机（测试版）" Margin="0,0,0,15" CanSwap="true" IsSwaped="true">
     <StackPanel Margin="25,40,23,15">
-        <TextBlock Margin="0,0,0,10" TextWrapping="Wrap"
+        <local:MyHint IsWarn="true"
                    Text="现在我们找到了关于IPV6的联机方法，请注意，该方法仅适用于有IPV6地址的小伙伴们玩耍" />
-		<TextBlock Margin="0,0,0,10" TextWrapping="Wrap"
+		<TextBlock Margin="0,10,0,10" TextWrapping="Wrap" HorizontalAlignment="Center"
                    Text="详细请查看Bilibili视频" />
 		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
  <local:MyButton Width="180" Height="35"
@@ -13,7 +13,22 @@
     </StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="关于该Blog" Margin="0,0,0,15">
+<local:MyCard Title="关于龙腾猫跃" Margin="0,0,0,15" CanSwap="true">
+   <StackPanel Margin="25,40,23,15">
+	<TextBlock Margin="0,0,0,10" TextWrapping="Wrap"
+                   Text="龙腾猫跃是PCL2启动器的作者，他不仅开发这个关于Minecraft的启动器，还在这个启动器里内置了一些小应用，自定义主页文件就是基于他给出的教学文件完成的" />
+	<TextBlock Margin="0,0,0,10" TextWrapping="Wrap" Foreground="#2a2aff" HorizontalAlignment="Center"
+                   Text="感谢龙腾猫跃！" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+	<local:MyButton Width="140" Height="35" ColorType="Red" HorizontalAlignment="Left" Margin="0,0,10,0"
+                   Text="赞助龙腾猫跃" EventType="打开网页" EventData="https://afdian.net/a/LTCat" ToolTip="我已经准备好啦，发车！"/>
+	<local:MyButton Width="140" Height="35" HorizontalAlignment="Left" Margin="0,0,10,0"
+                   Text="龙腾猫跃的主页" EventType="打开网页" EventData="https://space.bilibili.com/11343203" ToolTip="GOGOGO!"/>
+		</StackPanel>
+      </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="关于该Blog" Margin="0,0,0,15" >
     <StackPanel Margin="25,40,23,15">
         <TextBlock Margin="0,0,0,10" TextWrapping="Wrap"
                    Text="我们在这个标记文件里更新一些新闻，比如关于Minecraft的，这样你只需要将PCL打开并使用该文件即可了解一些事情，希望使用愉快！" />
@@ -27,21 +42,28 @@
         </StackPanel>
     </StackPanel>
 </local:MyCard>
+					
 
-<local:MyCard Title="Blog版本更新通告" Margin="0,0,0,15">
+
+<local:MyCard Title="Blog历史版本更新内容" Margin="0,0,0,15" CanSwap="true" IsSwaped="true">
+    <StackPanel Margin="25,40,23,15">
+	<local:MyListItem  Margin="-5,2,-5,8"
+					Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="0.23.8.1" Info="内测版" 
+		            EventType="弹出窗口" EventData="内测版 0.23.8.1|1.更新新闻 \n2.优化标记文件格式（排版小变动） \n3.可以查看历史更新内容 \n4.更新对龙腾猫跃的介绍" Type="Clickable" />
+		<local:MyListItem  Margin="-5,2,-5,8"
+					Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="0.23.7.31" Info="内测版" 
+		            EventType="弹出窗口" EventData="内测版 0.23.7.31|在0.23.7.31版本更新后，我们改变和新增了以下内容： \n1.Blog更新源由蓝奏云网盘改为Github \n2.修改了Blog更新方式，即手动下载改为bat文件一键更新 \n3.新增了IPv6联机方法教程 \n4.加入版本号，格式为：是否正式投入大面积使用（0或者1）.年份后两位.月份.日期.次序（可以省略） \n5.加入了README.md说明性文档" Type="Clickable" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="关于Microsoft官方查封盗版事件(2)" Margin="0,0,0,15">
     <StackPanel Margin="25,40,23,15">
         <TextBlock Margin="0,0,0,10" TextWrapping="Wrap"
-                   Text="在0.23.7.31版本更新后，我们改变和新增了以下内容：" />
+                   Text="由于我们团队使用的是苦力怕论坛上下载的Minecraft安装包，并且未购买正版，就在前几天时，我们发现了一些问题，比如提示当前Microsoft账户存在问题，无法进入其他人的世界等问题" />
 		<TextBlock Margin="0,0,0,10" TextWrapping="Wrap"
-                   Text="1.Blog更新源由蓝奏云网盘改为Github" />
+                   Text="这个问题已经影响到我们游玩Minecraft了，我们正在寻找其他方案，不然只能去网易玩Minecraft了" />
 		<TextBlock Margin="0,0,0,10" TextWrapping="Wrap"
-                   Text="2.修改了Blog更新方式，即手动下载改为bat文件一键更新" />
-		<TextBlock Margin="0,0,0,10" TextWrapping="Wrap"
-                   Text="3.新增了IPv6联机方法" />
-		<TextBlock Margin="0,0,0,10" TextWrapping="Wrap"
-                   Text="4.加入版本号，格式为：是否正式投入大面积使用（0或者1）.年份后两位.月份.日期.次序（可以省略）" />
-		<TextBlock Margin="0,0,0,10" TextWrapping="Wrap"
-                   Text="5.加入了README.md说明性文档" />
+                   Text="第三方Minecraft及启动器的未来，究竟是拭目以待，还是未雨绸缪？" />
     </StackPanel>
 </local:MyCard>
 
@@ -82,11 +104,7 @@
         <TextBlock Margin="0,0,0,5"  TextWrapping="Wrap" Foreground="#ffbe46"
                    Text="Android" />
         <TextBlock Margin="0,0,0,5"  TextWrapping="Wrap" Foreground="#ffbe46"
-                   Text="设备空闲内存大于1GB及以上，运行内存最低1GB，推荐3GB及以上，Android版本大于4.0" />
-        <TextBlock Margin="0,0,0,5"  TextWrapping="Wrap" Foreground="#ffbe46"
-                   Text="iOS" />
-        <TextBlock Margin="0,0,0,5"  TextWrapping="Wrap" Foreground="#ffbe46"
-                   Text="尚未明确，运行内存大于1GB即可，需要美区购买游戏且只能玩最新版" />
+                   Text="设备空闲内存大于1GB及以上，运行内存最低1GB，推荐3GB及以上，Android版本大于5.1" />
         <TextBlock Margin="0,0,0,5"  TextWrapping="Wrap" Foreground="#ffbe46"
                    Text="Windows" />
         <TextBlock Margin="0,0,0,5"  TextWrapping="Wrap" Foreground="#ffbe46" 
